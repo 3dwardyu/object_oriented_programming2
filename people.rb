@@ -4,7 +4,7 @@ class Person
     @name = name
   end
 
-  def Greeting
+  def greeting
     puts "Hi my name is #{@name}"
   end
 
@@ -22,5 +22,15 @@ class Instructor < Person
   end
 end
 
+#create instance of Instructor
 chris = Instructor.new("Chris")
+#create instance of student
 christina = Student.new("Christina")
+
+chris.greeting
+christina.greeting
+
+chris.teach
+christina.learn
+
+christina.teach #undefined method, teach is an instance method used in the Instructor class
